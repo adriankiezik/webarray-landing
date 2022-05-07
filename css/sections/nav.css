@@ -1,0 +1,93 @@
+.nav {
+  height: 110px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.25);
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--page-padding);
+}
+.nav__logo {
+  align-self: center;
+  margin-right: auto;
+}
+.nav__link {
+  text-decoration: none;
+  color: #232649;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.nav__button {
+  margin-left: auto;
+  font-size: 1.75rem;
+  color: white;
+  text-decoration: none;
+  background-color: #bc4595;
+  padding: 0.4em 1.5em;
+  border-radius: 4px;
+  box-shadow: 0px 3px 14.08px 1.92px rgba(0, 0, 0, 0.15);
+}
+.nav__sub {
+  height: 50px;
+  width: 100%;
+  background-color: rgba(251, 251, 251, 0.2);
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.07);
+}
+.nav__text {
+  vertical-align: middle;
+  float: right;
+  margin: 0;
+  margin-right: var(--page-padding);
+  line-height: 50px;
+  font-size: 1.5rem;
+  width: 220px;
+}
+.nav__text--bold {
+  font-weight: 500;
+}
+.nav__mobile-button {
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 1550px) {
+  .nav {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .nav__button {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .nav__button {
+    display: none;
+  }
+  .nav__logo {
+    margin: 0;
+  }
+  .nav__text {
+    text-align: center;
+    float: none;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav__link {
+    display: none;
+  }
+  .nav {
+    height: 80px;
+    justify-content: space-between;
+  }
+  .nav__sub {
+    height: 35px;
+  }
+  .nav__text {
+    line-height: 35px;
+  }
+  .nav__mobile-button {
+    display: block;
+  }
+}

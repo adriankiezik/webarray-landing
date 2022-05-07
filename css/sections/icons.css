@@ -1,0 +1,20 @@
+.icons {
+  width: 100%;
+  margin: 45px 0;
+}
+.icons__row {
+  display: flex;
+  gap: 40px;
+}
+.icons__row--moved {
+  transform: translateX(-50px);
+}
+.icons__globe {
+  filter: drop-shadow(0 8px 8px rgba(72, 72, 72, 0.12));
+  opacity: 0.2;
+}
+@media screen and (max-width: 576px) {
+  .icons {
+    display: none;
+  }
+}

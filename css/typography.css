@@ -1,0 +1,12 @@
+@font-face {
+  font-family: MotivaSans;
+  src: url("../assets/fonts/MotivaSansRegular.woff.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: MotivaSans;
+  src: url("../assets/fonts/MotivaSansMedium.woff.ttf");
+  font-weight: 500;
+  font-style: normal;
+}

@@ -1,0 +1,32 @@
+.features {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 50px;
+  column-gap: 40px;
+  padding: 0 var(--page-padding);
+}
+.features__item {
+  display: grid;
+  gap: 40px;
+}
+.features__title {
+  font-size: 2rem;
+}
+.features__text {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 992px) {
+  .features {
+    grid-template-columns: auto auto;
+    text-align: center;
+  }
+  .features__icon {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .features {
+    grid-template-columns: auto;
+    text-align: center;
+  }
+}

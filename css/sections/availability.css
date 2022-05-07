@@ -1,0 +1,40 @@
+.availability {
+  padding: 0 var(--page-padding);
+  display: grid;
+  gap: 30px;
+  grid-template-columns: auto auto;
+  padding-top: 100px;
+  background-color: #f2f2f2;
+}
+.availability__content {
+  display: grid;
+  gap: 55px;
+  max-width: 675px;
+  text-align: end;
+  align-self: center;
+}
+.availability__title--color {
+  color: #007ad8;
+}
+.availability__paragraph {
+  font-size: 1.5rem;
+}
+.availability__map {
+  transform: scale(110%) translateX(-30px) translateY(-80px);
+}
+@media screen and (max-width: 992px) {
+  .availability {
+    grid-template-columns: auto;
+    padding-top: 50px;
+  }
+  .availability__content {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .availability__map {
+    order: 2;
+    transform: none;
+    margin: 0 auto;
+    width: 90%;
+  }
+}
